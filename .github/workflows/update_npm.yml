@@ -1,4 +1,4 @@
-name: Update NPM on release
+name: Current Release
 on: [release]
 jobs:
   build:
