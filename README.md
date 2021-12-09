@@ -1,7 +1,7 @@
 # Samuel Log Jackson
 
 
-![Status](https://github.com/github/samuel_log_jackson/actions/workflows/main.yml/badge.svg?branch=main)
+![Status](https://github.com/lob/samuel_log_jackson/actions/workflows/main.yml/badge.svg?branch=main)
 
 A tribute to one of the greatest actors of this generation. Whether you saw
 him as Odell in "Jackie Brown", Private Henson in "A Soldier's Story", or 
