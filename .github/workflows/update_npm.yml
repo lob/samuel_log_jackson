@@ -24,4 +24,4 @@ jobs:
       - name: Publish
         uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ secrets.NPM_TOKEN }}
+          token: ${{ secrets.SHARIQ_NPM_TOKEN }}
