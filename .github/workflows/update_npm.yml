@@ -1,0 +1,27 @@
+name: Update NPM on release
+on: [release]
+jobs:
+  build:
+    name: Build and release new version to NPM
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node: ['10.x', '12.x', '14.x']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Use Node ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install deps and build (with cache)
+        uses: bahmutov/npm-install@v1
+      - name: Build
+        run: yarn build
+      - name: Publish
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
