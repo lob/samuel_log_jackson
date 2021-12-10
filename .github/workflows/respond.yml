@@ -4,6 +4,6 @@ jobs:
   respond_with_sam:
     runs-on: ubuntu-latest
     steps:
-      - uses: lob/action_sam_jackson@dev0.3
+      - uses: lob/action_sam_jackson@dev0.4
         with:
           message: 'Hello World It is me!'
