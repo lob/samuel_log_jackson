@@ -1,7 +1,7 @@
 name: Current Release
 on: [release]
 jobs:
-  build:
+  release:
     name: Build and release new version to NPM
 
     runs-on: ${{ matrix.os }}

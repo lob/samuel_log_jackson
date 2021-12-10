@@ -1,7 +1,7 @@
 name: Always Sam
 on: [issues]
 jobs:
-  build:
+  respond_with_sam:
     runs-on: ubuntu-latest
     steps:
       - uses: lob/action_sam_jackson@dev0.3
