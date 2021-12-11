@@ -7,3 +7,4 @@ jobs:
       - uses: lob/action_sam_jackson@latest
         with:
           message: 'Hello World It is me!'
+          token: ${{secrets.GITHUB_TOKEN}}
