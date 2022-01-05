@@ -1,10 +1,12 @@
 name: Always Sam
-on: [issues]
+on:
+  issues:
+    types: [opened]
 jobs:
   respond_with_sam:
     runs-on: ubuntu-latest
     steps:
       - uses: lob/action_sam_jackson@0.0.1
         with:
-          message: 'Welcome to Samuel Log Jackson. I hear you are having a problem? Don't worry, we are assembling a special team to tackle your issue. We're calling it the Avenger Initative.'
+          message: "Welcome to Samuel Log Jackson. I hear you are having a problem? Don't worry, we are assembling a special team to tackle your issue. We're calling it the Avenger Initative."
           token: ${{secrets.GITHUB_TOKEN}}

@@ -1,5 +1,7 @@
 name: Current Release
-on: [release]
+on: 
+  release:
+    types: [published]
 jobs:
   release:
     name: Build and release new version to NPM
