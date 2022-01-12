@@ -11,7 +11,7 @@ a certain energy to the screen.
 And now you can have that same energy in the console. 
 
 ```js
-import Samuel from samuel_log_jackson
+const { default: Samuel } = require("samuel_log_jackson")
 Samuel.log.jackson("my error", Samuel.ERROR)
 ```
 
