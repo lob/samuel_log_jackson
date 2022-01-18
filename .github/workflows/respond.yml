@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: lob/action_sam_jackson@0.0.2
         with:
-          message: "Welcome to Samuel Log Jackson. I hear you are having a problem? Don't worry, we are assembling a special team to tackle your issue. We're calling it the Avenger Initative."
+          message: "Welcome to Samuel Log Jackson. I hear you are having a problem? Don't worry, we are assembling a special team to tackle your issue. We're calling it the Avenger Initiative"
           token: ${{secrets.GITHUB_TOKEN}}
